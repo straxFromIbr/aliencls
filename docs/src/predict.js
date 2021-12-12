@@ -13,7 +13,7 @@ async function predict(img) {
 var run = function () {
     predStatus = document.getElementById('predStatus')
     elm = document.getElementById('preview');
-    predStatus.innerHTML = '推論開始'
+    predStatus.innerHTML = '推論中'
     predict(elm).then(value => {
         predStatus.innerHTML = '結果 : ' + value
         console.log('run', value)
