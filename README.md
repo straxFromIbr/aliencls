@@ -9,8 +9,8 @@
         - tfjs_converterで上記モデルをTensorFlowJS形式に変換したモデル
 - `/trainmodel.ipynb`
     - データセット構築→モデルの学習、検証のためのIPythonノートブック    
-- `/page`
-    - Webページ作成
+- `/docs`
+    - GitHubPages用
 
 
 ## ラベルとクラス名対応表
