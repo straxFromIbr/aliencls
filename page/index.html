@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <header class="d-flex justify-content-center">
+            <h1>DWエイリアン分類</h1>
+        </header>
+        <img id="preview" class="rounded mx-auto d-block"></img>
+        <form>
+            <div class="form-group">
+                <label for="inputFile">File input</label>
+                <div class="input-group">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputFile" accept="image/*">
+                        <label class="custom-file-label" for="inputFile" data-browse="選択">
+                            ファイルをアップロード
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="run()">推論</button>
+        </form>
+        <div class="alert alert-primary" role="alert" id="predStatus">
+            ステータス
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+    <script src="src/loadFile.js"></script>
+    <script src="src/predict.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+*.pyc
+*.zip
+tfjs_env
+.DS_Store
+page/src/node_modules/
